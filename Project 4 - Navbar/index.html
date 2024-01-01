@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 4 - Navbar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/32/MiHoYo_Logo.png/1200px-MiHoYo_Logo.png" class="logo" alt="logo" />
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <div class="links">
+          <div class="dropdown">
+            <!-- MODIFICATION #1 - Create an additional dropdown menu for the “Home" section -->
+            <a href="" onclick="toggleDropdown('dropdown1')">Home</a>
+            <div id="dropdown1" class="dropdown-content">
+                <a href="#">Home 1</a>
+                <a href="#">Home 2</a>
+                <a href="#">Home 3</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+          <!-- MODIFICATION #2 - Create an additional dropdown menu for the “About" section -->
+            <a href="" onclick="toggleDropdown('dropdown2')">About</a>
+            <div id="dropdown2" class="dropdown-content">
+                <a href="#">About A</a>
+                <a href="#">About B</a>
+                <a href="#">About C</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+          <!-- MODIFICATION #3 - Create an additional dropdown menu for the “Projects" section -->
+            <a href="" onclick="toggleDropdown('dropdown3')">Projects</a>
+            <div id="dropdown3" class="dropdown-content">
+                <a href="#">Project X</a>
+                <a href="#">Project Y</a>
+                <a href="#">Project Z</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="">Contact</a>
+      </div>
+
+      </div>
+        <!-- social media -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-behance"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-sketch"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- social icons close here -->
+
+        <!-- div class="nav-center" close here -->
+      </div>
+    </nav>
+    <!-- javascript -->
+    <script src="app.js"></script>
+    <!-- my font awesome -->
+    <script src="https://kit.fontawesome.com/cb263857a6.js"></script>
+  </body>
+</html>
+
+<!-- https://upload.wikimedia.org/wikipedia/en/thumb/3/32/MiHoYo_Logo.png/1200px-MiHoYo_Logo.png -->
+<!-- https://kit.fontawesome.com/cb263857a6.js -->
